@@ -1,0 +1,89 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+header
+{
+  background-image: url(elephant.jpg);
+  height: 98vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.MWIHOKO
+{
+	height: 100px;
+	width: 800px;
+	margin-left: 100px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h1
+{
+	color: blue;
+	text-transform: uppercase;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 0px;
+	margin-left: 50px;
+}
+
+ol
+{
+	color:white;
+	font-size: 30px;
+	margin-top: 450px;
+	margin-left: 400px;
+}
+
+.main-nav
+{
+	float: right;
+	list-style: none;
+	margin-top: 10px;
+}
+
+.main-nav li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 10px;
+	font-family: "Roboto", sans-serif;
+	font-size: 15px;
+}
+.main-nav .active a
+{
+	border: 1px solid white;
+}
+
+.main-nav li
+{
+	display: inline-block;
+}
+
+.main-nav li a:hover
+{
+	border: 1px solid white;
+	color: currentColor;
+}
+
+.sub-nav li a:hover
+{
+	border: 2px solid white;
+	color: currentColor;
+}
+.sub-nav li
+{
+	display: inline-block;
+}
+.sub-nav li a
+{
+	color: white;
+	text-decoration: none;
+	padding: 5px 10px;
+	font-family: "Roboto", sans-serif;
+	font-size: 30px;
+}
