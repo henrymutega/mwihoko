@@ -6,7 +6,7 @@
 
 header
 {
-  background-image: url(elephant.jpg);
+  background-image: url(workshop.jpg);
   height: 98vh;
   background-size: cover;
   background-position: center;
@@ -35,8 +35,8 @@ ol
 {
 	color:white;
 	font-size: 30px;
-	margin-top: 450px;
-	margin-left: 400px;
+	margin-top: 40px;
+	margin-left: 350px;
 }
 
 .main-nav
@@ -77,7 +77,7 @@ ol
 }
 .sub-nav li
 {
-	display: inline-block;
+	display: verticle-block;
 }
 .sub-nav li a
 {
