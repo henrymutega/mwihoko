@@ -1,8 +1,8 @@
-# {MWIHOKO WORKSHOP}
-#### {Brilliant metal workplace, with super worth designs.}, {C2019}
+# MWIHOKO WORKSHOP
+#### Brilliant metal workplace, with super worth designs., C2019
 #### By **{HENRY MUTEGA, The Developer}**
 ## Description
-This is an application that shows different and variety of metal door designs, windows, grills, chairs and other related metal designs all over, covering and ranging from house, to the compound up to the organization. It allows the user to view the designs at his/her comfort. It contains already made designs which can be booked at any time. 
+This is an application that shows different and variety of metal door designs, windows, grills, chairs and other related metal designs all over, covering and ranging from house, to the compound up to the organization. It allows the user to view the designs at his/her comfort. It contains already made designs which can be booked at any time.
 ## Setup/Installation Requirements
 * https://github.com/henrymutega/mwihoko.git
 * The App is user friendly which neither requires you to run the server nor installation of any dependencies.
