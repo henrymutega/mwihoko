@@ -10,29 +10,22 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 	<link href="css/styles.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="js/scripts.js"></script>
 </head>
 <body>
+	<!---	<div id="hi"><a id="hey" href="#hi">Page up</a></div>------>
 	<div class="container">
 		<div id="topp"><a id="up" href="#topp">Page Up</a></div>
 		<div class="row">
 			<ul id="main-nav" class="main-nav">
 				<li class="active"><a href="">HOME</a></li>
-				<li><a href="">SERVICE</a></li>
-					<select id="pro">
-						<option value="">OUR PRODUCTS</option>
-						<option value=""><li><a href="#about">DOORS</a></li></option>
-						<option value=""><li><a href="#">WINDOWS</a></li></option>
-						<option value=""><li><a href="#">GRILLS</a></li></option>
-						<option value=""><li><a href="#">GATES</a></li></option>
-						<option value=""><li><a href="#about">SHADES</a></li></option>
-					</select>
+				<li><a href="#product">PRODUCTS</a></li>
 				<li><a href="#about">ABOUT</a></li>
 				<li><a href="#contact">CONTACT</a></li>
 			</ul>
 		</div>
-		<p id="jj">yes</p>
 		<div class="top">
 			.
 			<div class="home">
@@ -49,7 +42,30 @@
 
 			<!---PRODUCTS IMAGES-------------------------->
 			<div class="designs">
-				<h2>OUR PRODUCTS</h2>
+				<h2 id="product">OUR PRODUCTS</h2>
+				<div class="row">
+        <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a href="#main-nav" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> all</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doors">doors</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="windows">windows</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="grills">grills</a>
+          <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="gazebo">gazebo</a>
+        </div>
+      </div>
+			<!---SEARCH BOX--------->
+			<div class="row">
+        <div class="col-10 mx-auto col-md-6">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend ">
+                <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+              </div>
+              <input type="text" class="form-control" placeholder="item...." id="search-item">
+            </div>
+          </form>
+        </div>
+      </div>
+			<!---IMAGES OF PRODUCTS------------>
 				<div class="row">
 					<div class="col-3">
 						<div class="card">
@@ -78,7 +94,7 @@
 					<div class="col-3">
 						<div class="card">
 							<div class="card-header text-center">DOOR</div>
-							<div class="card-body"><img src="images/door2.webp" class="img-fluid">
+							<div class="card-body"><img src="images/door1.jpg" class="img-fluid">
 							</div>
 							<div class="card-footer">price:...</div>
 						</div>
