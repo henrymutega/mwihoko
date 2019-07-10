@@ -59,6 +59,16 @@
 {
   text-align: right;
 }
+#hey
+{
+
+  position: relative;
+}
+#hi
+{
+  text-align: center;
+  position: fixed;
+}
 /***********ABOUT**************/
 .about
 {
