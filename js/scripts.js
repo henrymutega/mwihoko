@@ -24,12 +24,4 @@ $(document).ready(function(){
   $("input#mail").val("");
   $("textarea#comment").val("");
 });
-
-/********COLLECTING USER PRODUCT*************/
-$("#sub").click(function(){
-  var product = document.getElementById("pro");
-  document.getElementById("jj").innerHTML =
-  (product.options[product.selectedIndex].text).toUpperCase();
-
-  });
 });

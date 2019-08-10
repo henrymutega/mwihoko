@@ -37,7 +37,7 @@
 }
 .main-nav .active a
 {
-	border: 1px solid black;
+	border: 1px solid grey;
 }
 
 .main-nav li
@@ -47,8 +47,9 @@
 
 .main-nav li a:hover
 {
-	border: 1px solid blue;
-	color: brown;
+	border: 1px solid grey;
+	color: white;
+  background-color: grey;
 }
 #up
 {
@@ -73,13 +74,101 @@
 .about
 {
   text-align: center;
-  margin-bottom: 50px;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  margin-bottom: 150px;
+}
+h4
+{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 80px;
+}
+.flip-card {
+  width: 530px;
+  height: 350px;
+  perspective: 1000px; /* The 3D effect */
+}
+
+/* Position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front
+{
+  background-image: url("../images/asset2.jpeg");
+  background-size: cover;
+}
+.flip-card-front img
+{
+  margin-top: 30px;
+}
+.flip-card-front p
+{
+  color: black;
+}
+/* Style the back side */
+.flip-card-back {
+  background-color: white;
+  color: grey;
+  transform: rotateY(180deg);
+  border: 5px dotted grey;
+}
+.flip
+{
+  margin-bottom: 5px;
+}
+.flip img:hover
+{
+  transform: rotateY(180deg) scale(1.5);
+}
+.mt10
+{
+  font-size: 10px;
+}
+.mt20
+{
+  font-size: 20px;
+}
+.mt30
+{
+  font-size: 30px;
+}
+.mt40
+{
+  font-size: 40px;
+}
+.mt50
+{
+  font-size: 50px;
 }
 /*********DESIGNS*********/
-h2
+h3
 {
   text-align: center;
   color: black;
+  margin-top: 70px;
 }
 .card-body
 {
@@ -89,11 +178,14 @@ h2
 }
 .card-body img:hover
 {
-  border: 10px ridge silver;
-  padding: 2px;
   transform: rotateY(180deg) scale(1.5);
 }
-/*********CONTACTS************/
+.card-body img
+{
+  width: 190px;
+  height: 380px;
+}
+/*********CONTACTS US************/
 .copyright
 {
   text-align: center;
