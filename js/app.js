@@ -6,17 +6,16 @@ $(document).ready(function(){
     var comment = $("#comment").val();
 
   if(name== ""){
-    document.getElementById('con').innerHTML ="Please Enter your Name.";
+    alert("Please Enter your Name.");
     return;
   }else if(email== ""){
-    document.getElementById('con').innerHTML ="Please Enter your Email.";
+    alert("Please Enter your Email.");
     return;
   }else if (comment== "") {
-    document.getElementById('con').innerHTML ="Please Enter your Message.";
+    alert("Please Enter your Message.");
     return;
   }else{
-    document.getElementById('cont').innerHTML = name.toUpperCase() + " We have recieved your message. Thank you for reaching out to us.";
-    $("#con").hide();
+    alert(name.toUpperCase() + " We have recieved your message. Thank you for reaching out to us.")
   }
 
 /*********RESET INPUTS***********/
