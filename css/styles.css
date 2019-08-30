@@ -1,217 +1,154 @@
-/*********HOME PAGE******/
-.top
-{
-  background-image: url("../images/weld7.jpeg");
-  height: 70vh;
-  margin-bottom: 50px;
-}
-.home
-{
-  text-align: center;
-  margin-top: 30px;
-  font-size: 20px;
-  color: white;
-}
-.homep1
-{
-  margin-top: 150px;
-  line-height: 50px;
-  font-stretch: extra-expanded;
-  font-weight: bold;
-  font-display: swap;
-}
 
-
-/*******NAVIGATION BAR***********/
-.main-nav
-{
-	margin-top: 50px;
-}
-
-.main-nav li a
-{
-	color: black;
-	padding: 5px 10px;
-	font-family: "Roboto", sans-serif;
-	font-size: 15px;
-}
-.main-nav .active a
-{
-	border: 1px solid grey;
-}
-
-.main-nav li
-{
-	display: inline-block;
-}
-
-.main-nav li a:hover
-{
-	border: 1px solid grey;
-	color: white;
-  background-color: grey;
-}
-#up
-{
-  position: fixed;
-  margin-top: 580px;
-}
-#topp
-{
-  text-align: right;
-}
-#hey
-{
-
-  position: relative;
-}
-#hi
-{
-  text-align: center;
-  position: fixed;
-}
-/***********ABOUT**************/
-.about
-{
-  text-align: center;
-  font-family: sans-serif;
-  font-weight: normal;
-  font-size: 20px;
-  margin-bottom: 150px;
-}
-h4
-{
-  text-align: center;
-  font-size: 30px;
-  margin-bottom: 80px;
-}
-.flip-card {
-  width: 530px;
-  height: 350px;
-  perspective: 1000px; /* The 3D effect */
-}
-
-/* Position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front
-{
-  background-image: url("../images/asset2.jpeg");
-  background-size: cover;
-}
-.flip-card-front img
-{
-  margin-top: 30px;
-}
-.flip-card-front p
+/****NAVIGATION BAR*****/
+.nav-link
 {
   color: black;
+  font-size: 1.0rem;
+  transition: all 0.5s ease-in-out;
+  position: center;
 }
-/* Style the back side */
-.flip-card-back {
-  background-color: white;
+.nav-link:hover
+{
+  color: darkred;
+  font-size: 1.2rem;
+}
+.navbar-toggler
+{
+  outline: none !important;
+}
+.toggler-icon
+{
+  font-size: 2.5rem;
   color: grey;
-  transform: rotateY(180deg);
-  border: 5px dotted grey;
 }
-.flip
-{
-  margin-bottom: 5px;
+/***End of Navigation Bar**/
+/**Banner****/
+.home
+ {
+  min-height: calc(100vh - 76px);
+  background: url("../images/workshop.jpg") center/cover fixed no-repeat;
+  position: relative;
 }
-.flip img:hover
+.mybanner
 {
-  transform: rotateY(180deg) scale(1.5);
+  color: white;
+  margin-top: -4rem;
 }
-.mt10
+.mybanner:hover
 {
-  font-size: 10px;
+  transition: all 1.5s ease-in-out;
+  color: darkred;
+  margin-top: 2rem;
 }
-.mt20
+.mybanner-title
 {
-  font-size: 20px;
+  color: darkred;
+  font-size: 4rem;
 }
-.mt30
+.mybanner-title:hover
 {
-  font-size: 30px;
-}
-.mt40
-{
-  font-size: 40px;
-}
-.mt50
-{
-  font-size: 50px;
-}
-/*********DESIGNS*********/
-h3
-{
-  text-align: center;
+  transition: all 1.5s ease-in-out;
+  font-size: 4.5rem;
   color: black;
-  margin-top: 70px;
 }
-.card-body
+/***End of Banner****/
+/**About us****/
+.abtmg
 {
-  background-color: silver;
-  margin: 10px;
-  margin-bottom: 50px;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
-.card-body img:hover
+.tUs, .tpro
 {
-  transform: rotateY(180deg) scale(1.5);
+  color: darkred;
+  font-size: 3rem;
 }
-.card-body img
+.fnt
 {
-  width: 190px;
-  height: 380px;
+  font-size: 1.5rem;
 }
-/*********CONTACTS US************/
-.copyright
+.about:hover
 {
-  text-align: center;
-  margin-top: 30px;
+  transition: all 1.5s ease-in-out;
+  transform: scaleX(1.5);
+  color: darkred;
 }
-.contact
+.about-info
 {
-  background-color: silver;
-  margin-bottom: 30px;
-  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #6c757d;
 }
-.inputs
+.about-info:hover
 {
-  text-align: center;
+  transition: all 0.5s ease-in-out;
+  font-style: oblique;
+  color: black;
+  transform: scaleY(1.2);
 }
-#name, #mail, #comment
+/**End of About us***/
+
+/***Our products section*****/
+.product
+{
+  background-color: lightgrey;
+}
+.pro-title
+{
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+.tpro:hover
+{
+  transition: all 0.5s ease-in-out;
+  color: black;
+  font-size: 4rem;
+}
+/***End of our products section***/
+
+/**products img******/
+.img-container
+{
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  height: 60vh;
+}
+.pro-img
+{
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .pro-img
+{
+  transform: scale(1.2);
+}
+/***End of products img*****/
+
+/***contact details*******/
+.contacts
+{
+  background-color: black;
+  color: grey;
+}
+.message
+{
+  display: none;
+}
+#name, #mail
 {
   background-color: transparent;
-  margin-top: 20px;
+  color: white;
+  margin-left: 10px;
+  width: 48%;
 }
-#con
+#comment
 {
-  color: red;
+  background-color: transparent;
+  color: white;
 }
-#cont
+/*** page links*********/
+.pg-links
 {
-  color: green;
-  font-size: 20px;
+  color: grey;
 }
+/***End of page links*********/
+/****End of contact details***/
